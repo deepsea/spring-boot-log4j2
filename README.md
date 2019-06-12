@@ -8,7 +8,7 @@ spring-boot-log4j2 is a repository that includes a spring boot log4j2 logging fa
 
 ### Who do I talk to? ###
 
-* Rchard Lawlor - lawlorichard@gmail.com
+* Richard Lawlor - lawlorichard@gmail.com
 
 ### How do I get set up? ###
 
