@@ -20,11 +20,11 @@ spring-boot-log4j2 is a repository that includes a spring boot log4j2 logging fa
 
 ### Console results ###
 
-[2019-06-12 17:17:43,864 DEBUG SpringBootLog4j2Application.main] Debug log message
-[2019-06-12 17:17:43,868 INFO SpringBootLog4j2Application.main] Info log message
-[2019-06-12 17:17:43,868 WARN SpringBootLog4j2Application.main] Warning log message
-[2019-06-12 17:17:43,869 ERROR SpringBootLog4j2Application.main] Error log message
-[2019-06-12 17:17:43,869 FATAL SpringBootLog4j2Application.main] Fatal log message
+* [2019-06-12 17:17:43,864 DEBUG SpringBootLog4j2Application.main] Debug log message
+* [2019-06-12 17:17:43,868 INFO SpringBootLog4j2Application.main] Info log message
+* [2019-06-12 17:17:43,868 WARN SpringBootLog4j2Application.main] Warning log message
+* [2019-06-12 17:17:43,869 ERROR SpringBootLog4j2Application.main] Error log message
+* [2019-06-12 17:17:43,869 FATAL SpringBootLog4j2Application.main] Fatal log message
 
 ### File results ###
 
@@ -35,11 +35,11 @@ spring-boot-log4j2 is a repository that includes a spring boot log4j2 logging fa
 * (If you are using unix or linux)
 <RollingFile name ="File" fileName="${sys:user.home}${path}/${filename}.log"filePattern="${sys:user.home}${path}/${archive}">
 
-[2019-06-12 17:31:04,305 DEBUG SpringBootLog4j2Application.main] Debug log message
-[2019-06-12 17:31:04,309 INFO SpringBootLog4j2Application.main] Info log message
-[2019-06-12 17:31:04,309 WARN SpringBootLog4j2Application.main] Warning log message
-[2019-06-12 17:31:04,309 ERROR SpringBootLog4j2Application.main] Error log message
-[2019-06-12 17:31:04,310 FATAL SpringBootLog4j2Application.main] Fatal log message
+* [2019-06-12 17:31:04,305 DEBUG SpringBootLog4j2Application.main] Debug log message
+* [2019-06-12 17:31:04,309 INFO SpringBootLog4j2Application.main] Info log message
+* [2019-06-12 17:31:04,309 WARN SpringBootLog4j2Application.main] Warning log message
+* [2019-06-12 17:31:04,309 ERROR SpringBootLog4j2Application.main] Error log message
+* [2019-06-12 17:31:04,310 FATAL SpringBootLog4j2Application.main] Fatal log message
 
 You can find the log file at 
 
