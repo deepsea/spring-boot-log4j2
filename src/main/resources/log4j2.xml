@@ -6,7 +6,6 @@
     <Property name="default">[%d %p %c{1.}] %m%n</Property>
     <Property name ="verbose">[%d{HH:mm:ss.SSS} [%t] %-5level %logger{36}] - %msg%n</Property>
     <Property name ="default_with_method">[%d %p %c{1}.%M] %m%n</Property>
-    <Property name="default_with_method">[%d %p %c{1}.%M] %m%n</Property>
     <Property name="env">${sys:spring.profiles.active}</Property>
     <Property name="component">spring-boot</Property>
     <Property name="path">/rlawlor/${env}/${component}</Property>
