@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Configuration status="WARN" monitorInterval="30">
+
+  <Properties>
+    <Property name="default">[%d %p %c{1.}] %m%n</Property>
+    <Property name ="verbose">[%d{HH:mm:ss.SSS} [%t] %-5level %logger{36}] - %msg%n</Property>
+    <Property name ="default_with_method">[%d %p %c{1}.%M] %m%n</Property>
+    <Property name="default_with_method">[%d %p %c{1}.%M] %m%n</Property>
+    <Property name="env">${sys:spring.profiles.active}</Property>
+    <Property name="component">spring-boot</Property>
+    <Property name="path">/rlawlor/${env}/${component}</Property>
+    <Property name="filename">log4j2</Property>
+    <Property name="archive">${filename}.%d{yyyy-MM}-%i.log.gz</Property>
+  </Properties>
+
+  <Appenders>
+    <Console name="Console" target="SYSTEM_OUT" follow="true">
+      <PatternLayout pattern="${default_with_method}"/>
+    </Console>
+    <RollingFile name ="File" fileName="${sys:user.home}${path}/${filename}.log" filePattern="${sys:user.home}${path}/${archive}">
+      <Patternlayout>
+        <Pattern>${default_with_method}</Pattern>
+      </Patternlayout>
+      <Policies>
+        <TimeBasedTriggeringPolicy />
+        <SizeBasedTriggeringPolicy size="100 MB"/>
+      </Policies>
+      <DefaultRolloverStrategy max="20"/>
+    </RollingFile>
+  </Appenders>
+
+  <Loggers>
+    <Root level="ALL">
+      <AppenderRef ref="Console"/>
+      <AppenderRef ref="File"/>
+    </Root>
+    <Logger name="trace" level="TRACE">
+      <AppenderRef ref="Console"/>
+      <AppenderRef ref="File"/>
+    </Logger>
+    <Logger name="debug" level="DEBUG">
+      <AppenderRef ref="Console"/>
+    </Logger>
+    <Logger name="info" level="INFO">
+      <AppenderRef ref="Console"/>
+      <AppenderRef ref="File"/>
+    </Logger>
+    <Logger name="warn" level="WARN">
+      <AppenderRef ref="Console"/>
+    </Logger>
+    <Logger name="error" level="ERROR">
+      <AppenderRef ref="Console"/>
+      <AppenderRef ref="File"/>
+    </Logger>
+    <Logger name="fatal" level="FATAL">
+      <AppenderRef ref="Console"/>
+      <AppenderRef ref="File"/>
+    </Logger>
+  </Loggers>
+
+</Configuration>

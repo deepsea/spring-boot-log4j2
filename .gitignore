@@ -1,0 +1,42 @@
+/target/
+.mvn/
+*.jar
+*.lst
+*.original
+*.gif
+*.html
+*.js
+*.css
+*.txt
+*.csv
+*.exec
+
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+*.class
+*.properties
+*/target/*
+env/
+
+### NetBeans ###
+/nbproject/private/
+/build/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build\.bat
+.idea

@@ -13,7 +13,7 @@
   <version>0.0.1-SNAPSHOT</version>
 
   <properties>
-    <start-class>Log4j2Application</start-class>
+    <start-class>SpringBootLog4j2Application</start-class>
   </properties>
 
   <dependencies>
