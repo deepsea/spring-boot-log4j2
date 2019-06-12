@@ -27,10 +27,11 @@ spring-boot-log4j2 is a repository that includes a spring boot log4j2 logging fa
 * [2019-06-12 17:17:43,869 FATAL SpringBootLog4j2Application.main] Fatal log message
 
 ### Fle configuration ###
+
 In the log4j2.xml set your rolling file on line 23 to be
 
 * (windows)
-<RollingFile name ="File" fileName="C:${path}/${filename}.log" filePattern="C:${path}/${archive}">  
+<RollingFile name = "File" fileName="C:${path}/${filename}.log" filePattern="C:${path}/${archive}"
 
 You can find the log file at
 C:/rlawlor/dev/spring-boot/log4j2.log
