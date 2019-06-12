@@ -26,28 +26,28 @@ spring-boot-log4j2 is a repository that includes a spring boot log4j2 logging fa
 * [2019-06-12 17:17:43,869 ERROR SpringBootLog4j2Application.main] Error log message
 * [2019-06-12 17:17:43,869 FATAL SpringBootLog4j2Application.main] Fatal log message
 
-### File results ###
+### Fle configuration ###
+In the log4j2.xml set your rolling file on line 23 to be
 
-* In the log4j2.xml set your rolling file on line 23 to be
-* (If you are using windows)
+* (windows)
 <RollingFile name ="File" fileName="C:${path}/${filename}.log" filePattern="C:${path}/${archive}">  
+
+You can find the log file at
+C:/rlawlor/dev/spring-boot/log4j2.log
   
-* (If you are using unix or linux)
+* (unix or linux)
 <RollingFile name ="File" fileName="${sys:user.home}${path}/${filename}.log"filePattern="${sys:user.home}${path}/${archive}">
+
+You can find the log file at 
+/home/username/rlawlor/dev/spring-boot/log4j2.log
+
+### File results ###
 
 * [2019-06-12 17:31:04,305 DEBUG SpringBootLog4j2Application.main] Debug log message
 * [2019-06-12 17:31:04,309 INFO SpringBootLog4j2Application.main] Info log message
 * [2019-06-12 17:31:04,309 WARN SpringBootLog4j2Application.main] Warning log message
 * [2019-06-12 17:31:04,309 ERROR SpringBootLog4j2Application.main] Error log message
 * [2019-06-12 17:31:04,310 FATAL SpringBootLog4j2Application.main] Fatal log message
-
-You can find the log file at 
-
-* Windows:
-C:/rlawlor/dev/spring-boot/log4j2.log
-
-* Unix/Linux:
-/home/username/rlawlor/dev/spring-boot/log4j2.log
 
 ### Changing log facades ###
 
@@ -58,10 +58,10 @@ C:/rlawlor/dev/spring-boot/log4j2.log
 ### Changing log levels ###
 
 * The log hierarchy is 
-ALL < TRACE < DEBUG < INFO <WARN <ERROR <FATAL <OFF
+* ALL < TRACE < DEBUG < INFO <WARN <ERROR <FATAL <OFF
 
-In the log4j2.xml set your root level on line 34 to be INFO for example 
-Now INFO, WARN, ERROR and FATAL are what's available
+* In the log4j2.xml set your root level on line 34 to be INFO for example 
+* Now INFO, WARN, ERROR and FATAL are what's available
 
 
 
